@@ -594,7 +594,7 @@
           (reference "U2") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "U2") (unit 1)
         )
@@ -637,7 +637,7 @@
           (reference "C12") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "C5") (unit 1)
         )
@@ -665,7 +665,7 @@
     )
     (pin "1" (uuid 1446c087-28ca-48be-8096-406e5584e69d))
     (instances
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b/f16a8f72-c85c-4194-9580-d5ee14eb71ec"
           (reference "#PWR071") (unit 1)
         )
@@ -695,7 +695,7 @@
           (reference "#FLG03") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "#FLG01") (unit 1)
         )
@@ -738,7 +738,7 @@
           (reference "C9") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "C2") (unit 1)
         )
@@ -771,7 +771,7 @@
           (reference "#PWR034") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "#PWR04") (unit 1)
         )
@@ -814,7 +814,7 @@
           (reference "F1") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "F1") (unit 1)
         )
@@ -857,7 +857,7 @@
           (reference "C9") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "C2") (unit 1)
         )
@@ -890,7 +890,7 @@
           (reference "#PWR032") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "#PWR02") (unit 1)
         )
@@ -933,7 +933,7 @@
           (reference "C13") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "C6") (unit 1)
         )
@@ -966,7 +966,7 @@
           (reference "#PWR050") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "#PWR010") (unit 1)
         )
@@ -999,7 +999,7 @@
           (reference "#PWR036") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "#PWR06") (unit 1)
         )
@@ -1031,7 +1031,7 @@
     (pin "4" (uuid a59ef4dd-5871-47e2-990a-f7072e11eb56))
     (pin "5" (uuid eae09c80-a5e7-43ac-8795-f44dd454f439))
     (instances
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b/f16a8f72-c85c-4194-9580-d5ee14eb71ec"
           (reference "U4") (unit 1)
         )
@@ -1071,7 +1071,7 @@
           (reference "C8") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "C1") (unit 1)
         )
@@ -1104,7 +1104,7 @@
           (reference "#FLG03") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "#FLG01") (unit 1)
         )
@@ -1147,7 +1147,7 @@
           (reference "C9") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "C2") (unit 1)
         )
@@ -1180,7 +1180,7 @@
           (reference "#PWR041") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "#PWR07") (unit 1)
         )
@@ -1213,7 +1213,7 @@
           (reference "#PWR052") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "#PWR012") (unit 1)
         )
@@ -1246,7 +1246,7 @@
           (reference "#PWR042") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "#PWR08") (unit 1)
         )
@@ -1279,7 +1279,7 @@
           (reference "#PWR035") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "#PWR05") (unit 1)
         )
@@ -1322,7 +1322,7 @@
           (reference "C12") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "C5") (unit 1)
         )
@@ -1355,7 +1355,7 @@
           (reference "#PWR032") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "#PWR02") (unit 1)
         )
@@ -1398,7 +1398,7 @@
           (reference "C10") (unit 1)
         )
       )
-      (project "caravel-mvp"
+      (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "C3") (unit 1)
         )
