@@ -55,7 +55,10 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "silk_overlap|94138057|26406285|bd0f699b-ea4e-41c4-993e-1e3ca673ed67|705e81ce-8908-4ec3-9eff-852a9dda9b2a",
+        "silk_overlap|94995200|29025332|bd0f699b-ea4e-41c4-993e-1e3ca673ed67|e9342b8f-3cc2-40fb-bbab-a99242263aff"
+      ],
       "meta": {
         "version": 2
       },
@@ -173,7 +176,8 @@
       ],
       "track_widths": [
         0.0,
-        0.2
+        0.2,
+        0.4
       ],
       "via_dimensions": [
         {

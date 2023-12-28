@@ -1693,7 +1693,6 @@
   (no_connect (at 45.72 40.64) (uuid 4ac22243-8598-4fe1-b9be-d2cb6ad86d2e))
   (no_connect (at 45.72 43.18) (uuid 51dd27d7-6d4f-49bc-9633-c51bf45ff7de))
   (no_connect (at 25.4 177.8) (uuid 57c5ac3b-75ec-4025-b83e-364e056385c0))
-  (no_connect (at 250.19 69.85) (uuid 589f737f-bd1f-45f5-baf8-7a0fdfb40678))
   (no_connect (at 45.72 53.34) (uuid 6dd0c260-dfa1-4542-98c1-e8a26cf8ac49))
   (no_connect (at 257.81 41.91) (uuid 70289e7a-b2f5-4654-b375-8453061c4361))
   (no_connect (at 45.72 35.56) (uuid 7733db2c-5549-42f8-9fd9-e540c7c7ec77))
@@ -3881,6 +3880,31 @@
     )
   )
 
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 250.19 69.85 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 2ad6b42b-6753-4a15-9560-f5c5710449e9)
+    (property "Reference" "#PWR04" (at 250.19 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 250.19 72.39 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 250.19 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 250.19 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6c7c4f3e-34fa-4c36-a3d9-d104b8257f0b))
+    (instances
+      (project "tt-vga-clock"
+        (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
+          (reference "#PWR04") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R_Small") (at 224.79 144.78 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2bacccc7-c3be-43f6-b513-95da86b7f116)
@@ -3978,6 +4002,31 @@
       (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "R15") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 41.91 82.55 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 33010cf4-a18e-4887-8143-46e9aca46789)
+    (property "Reference" "TP4" (at 38.608 77.47 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "TestPoint" (at 38.608 80.01 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm" (at 41.91 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 41.91 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 07ec346d-a9cf-4b1b-a23f-7f6b1e669c5a))
+    (instances
+      (project "tt-vga-clock"
+        (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
+          (reference "TP4") (unit 1)
         )
       )
     )
@@ -4188,6 +4237,31 @@
       (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "#PWR033") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+1V8") (at 41.91 100.33 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3ac6880d-a92f-4531-aa4c-a3c6e7ec9e15)
+    (property "Reference" "#PWR010" (at 38.1 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+1V8" (at 46.99 100.33 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 41.91 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 41.91 100.33 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 76a5150b-5047-439f-8cee-d5e334c666e1))
+    (instances
+      (project "tt-vga-clock"
+        (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -4920,6 +4994,31 @@
     )
   )
 
+  (symbol (lib_id "power:+3V3") (at 41.91 82.55 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 8df18495-2dd4-4559-8659-442a1ae62014)
+    (property "Reference" "#PWR05" (at 38.1 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 45.085 82.55 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 41.91 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 41.91 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6ce578ac-4032-4a05-b3a0-166a46c396bf))
+    (instances
+      (project "tt-vga-clock"
+        (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
+          (reference "#PWR05") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_name "GND_1") (lib_id "power:GND") (at 240.03 39.37 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8f27966d-b447-4284-9450-2aff3c3fd126)
@@ -5332,6 +5431,31 @@
       (project "tt-vga-clock"
         (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
           (reference "SW4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 41.91 100.33 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid aa9c332f-9ad4-4075-91be-14c7add82007)
+    (property "Reference" "TP5" (at 38.608 95.25 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "TestPoint" (at 38.608 97.79 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm" (at 41.91 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 41.91 95.25 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 624bfa3a-dac7-4edc-8300-42acc9bda646))
+    (instances
+      (project "tt-vga-clock"
+        (path "/d2f3109e-08ec-4d18-8cdf-c360e3b1458b"
+          (reference "TP5") (unit 1)
         )
       )
     )
