@@ -53,17 +53,17 @@ The definition of the clock design pins are here: https://github.com/TinyTapeout
 
 ### inputs
 
-06 clock 
-07 rst_n
-08 hours
-09 mins
-10 sec
+* 06 clock 
+* 07 rst_n
+* 08 hours
+* 09 mins
+* 10 sec
 
 ### outputs
 
-16 hsync
-17 vsync
-18:23 rrggbb
+* 16 hsync
+* 17 vsync
+* 18:23 rrggbb
 
 # BOM
 
