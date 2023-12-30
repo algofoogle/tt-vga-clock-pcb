@@ -10,7 +10,7 @@ Matt Venn's ASIC VGA Clock
 
 # PCB
 
-![board](doc/3dredner.png)
+![board](doc/3drender.png)
 
 This PCB started by forking the https://github.com/TinyTapeout/caravel-mvp-pcb template repository. That provides all the minimal necessary components for the chip to work. 
 This repo then adds the needed buttons and VGA connector for the clock design.
