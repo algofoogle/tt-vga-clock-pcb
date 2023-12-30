@@ -4,9 +4,8 @@ Matt Venn's ASIC VGA Clock
 ==========================
 
 * World's first [certified open source hardware](https://certification.oshwa.org/es000023.html) down to the GDS?
-* The ASIC was part of the Google sponsored MPW1
-* For more details about the implementation, see [VGA ASIC Clock](https://www.zerotoasiccourse.com/post/vga_clock/). 
-* Chip design: https://github.com/TinyTapeout/tt03p5-vga-clock
+* The original design was using an ASIC that was part of the Google sponsored MPW1. Due to [many issues with this first chip](https://www.zerotoasiccourse.com/post/mpw1_silicon/), the current version uses one from the [TinyTapeout 3p5](https://github.com/TinyTapeout/tinytapeout-03p5) experimental test.
+* For more details about the design, see [VGA ASIC Clock](https://www.zerotoasiccourse.com/post/vga_clock/). 
 
 # PCB
 
