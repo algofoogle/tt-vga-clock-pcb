@@ -725,6 +725,11 @@
       (net 79 "/vsync") (pintype "passive") (tstamp 0d3d6d76-9eda-4928-9297-bf4739854219))
     (pad "15" thru_hole circle (at 4.822 -2.54 180) (size 2 2) (drill 1.19) (layers "*.Cu" "*.Mask")
       (net 74 "unconnected-(J5-Pad15)") (pintype "passive+no_connect") (tstamp b7dc156e-5199-41d6-bf02-3d14078476c6))
+    (model "${KICAD7_3DMODEL_DIR}/Connector_Dsub.3dshapes/DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm.wrl"
+      (offset (xyz -4.5 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 180))
+    )
   )
 
   (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")

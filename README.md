@@ -1,90 +1,87 @@
-# Caravel MVP
-
-This is a sample "minimum viable PCB" for [Caravel chips](https://caravel-harness.readthedocs.io/en/latest/): Google MPW or [chipIgnite](https://info.efabless.com/chipignite-v2), including variants for [TinyTapeout](https://tinytapeout.com/).
-
-Fork this repo to get a head start on spinning your own Caravel based PCB.
-
-The circuit includes all the critical (required) elements, basically:
-
-  * power regulation;
-  * a clock signal;
-  * flash memory, for code; and
-  * the chip itself
-
-along with basic passive support (bypass caps...) [Full schematic PDF here](doc/caravel-mvp.pdf)
 
 
-It also has a few switches and connectors, as demonstrations.  These are enclosed in dotted boxes to highlight their optionality.
+Matt Venn's ASIC VGA Clock
+==========================
 
-![Option Box](https://raw.githubusercontent.com/psychogenic/caravel-mvp/main/doc/img/schem-optionbox.jpg)
+* World's first [certified open source hardware](https://certification.oshwa.org/es000023.html) down to the GDS?
+* The ASIC was part of the Google sponsored MPW1
+* For more details about the implementation, see [VGA ASIC Clock](https://www.zerotoasiccourse.com/post/vga_clock/). 
+* Chip design: https://github.com/TinyTapeout/tt03p5-vga-clock
 
+# PCB
 
-The full schematic is available as a PDF in the doc/ directory.
+![board](doc/3dredner.png)
 
-A sample layout was also included, though routing was not completed as you're certainly going to want to change components and floorplan around for your custom boards.
+This PCB started by forking the https://github.com/TinyTapeout/caravel-mvp-pcb template repository. That provides all the minimal necessary components for the chip to work. 
+This repo then adds the needed buttons and VGA connector for the clock design.
 
+* [PDF Schematic](doc/schematic.pdf)
 
-![PCB Floorplan](https://raw.githubusercontent.com/psychogenic/caravel-mvp/main/doc/img/caravel-mvp-floorplan-sample.jpg)
+# Setup
 
+## Firmware
 
-# Footprints and Symbols
+This needs to be made public and the fw fixed to always select clock.
 
-Useful symbols and footprints are used here and elsewhere, included as a submodule.
+https://github.com/TinyTapeout/tt3p5-demo-fw/
 
-```
-  git submodule update --init --recursive
-```
-will actually brings these in to your local fs.
+## PLL config
 
-# TinyTapeout
+Needs 31.5MHz for VGA signal. As precise as possible for good timekeeping.
+A 9MHz oscillator should also work if using the chip's built in PLL.
 
-A TinyTapeout-specific versions are also included. If using along with the Caravel CPU, the only real differences are in the symbol and net names used, as this helps to clarify things a lot.
+Using https://github.com/kbeckmann/caravel-pll-calculator
 
-However, you may also use it stand-alone, in which case a few components aren't required (e.g. flash memory) and a few additional ones are needed (mainly passives for pull-ups and config bootstraps).
+    matt-desktop:2003 [main]: ./caravel_pll.py generate --clkout 31.5 --clkin 9
+    PLL Parameters:
 
-If you are implementing a PCB for a TinyTapeout chip, simply:
+    clkin:    9.00 MHz
+    clkout:   31.50 MHz
+    clkout90: 31.50 MHz
 
-```
-  git checkout tt123
-```
+    PLL Feedback Divider: 14
+    PLL Output Divider 1: 4
+    PLL Output Divider 2: 4
 
-and the schematic ([TT version PDF here](doc/caravel-mvp-tinytapeout.pdf)) will include something like this instead:
+    Register 0x11: 0x24
+    Register 0x12: 0x0e
 
-![TT123 branch](https://raw.githubusercontent.com/psychogenic/caravel-mvp/main/doc/img/tt123-branch.jpg)
+## Pinning
 
-along with the TT standalone config sheet.
+The chip's pinout is here: https://github.com/TinyTapeout/tinytapeout-03p5/blob/main/verilog/rtl/user_defines.v
 
+The definition of the clock design pins are here: https://github.com/TinyTapeout/tt03p5-vga-clock/blob/main/src/tt_vga_clock.v
 
+### inputs
+
+06 clock 
+07 rst_n
+08 hours
+09 mins
+10 sec
+
+### outputs
+
+16 hsync
+17 vsync
+18:23 rrggbb
+
+# BOM
+
+TBD
+
+# Errata
 
 # Resources
 
-### TinyTapeout
-[TinyTapeout](https://tinytapeout.com/) is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip.
-
-It's the easiest and cheapest way I know to get your designs on an ASIC.
-
-
-
-### Caravel
-
-Caravel is composed of a harness frame plus two wrappers for drop-in modules for the management area and user project area.  Basically a SoC with a RISC-V CPU, space for user designs and ways to connect those to the outside world.
-
-See:
- * [Caravel chips](https://caravel-harness.readthedocs.io/en/latest/)
- * [efabless/caravel](https://github.com/efabless/caravel)
- * [efabless/caravel_mgmt_soc_litex](https://github.com/efabless/caravel_mgmt_soc_litex)
- 
-
-
-
-
-
-
+* Caravel datasheet: https://caravel-harness.readthedocs.io/en/latest
+* Version 1 repository is here: https://github.com/mattvenn/vga_clock_pcb
 
 # License
 
-This is meant as a template and starting point for your own projects and is all released under as open hardware.  The MVP schematics and layouts are
+* The ASIC and PCB are licensed under the [Apache2 License](LICENSE)
 
-  Copyright (C) 2023 Pat Deegan, [Psychogenic Technologies](https://psychogenic.com)
+# Open Source Hardware
 
-and released under the terms of the Apache License, version 2.0.  See the accompanying LICENSE file for details.
+This board is an OSHWA approved design: [ES000023](https://certification.oshwa.org/es000023.html)
+
